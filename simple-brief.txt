@@ -1,0 +1,20 @@
+Follina Exploit (CVE-2022-30190)
+
+VirtualBox
+- Windows 10
+- Kali Linux
+
+Kali Lilux
+- Create "clickme.docx" which is a
+- Phishing with SET
+
+Windows 10
+- Open email and download "clickme.docx"
+
+Kali Lilux
+- Get in the target PowerShell
+- Create 3 Demo situations
+    1. Zipbomb
+    2. Virus (iLoveU)
+    3. [WHITE]
+    
