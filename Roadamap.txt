@@ -1,0 +1,10 @@
+Follina Exploit (CVE-2022-30190)
+
+- จำลองผ่าน Virtual Box จำนวนสอง instance โดยใช้ network เดียวกัน (local)
+- เริ่มจากการ Phising ด้วย Social Engineering Tools เพื่อส่ง Email ปลอม
+- เนื้อหาใน Email หลอกล่อให้เปิด .docx
+- เมื่อ User โดน Compromise เราก็จะสามารถเข้าถึง PowerShell
+- แตก Demo ออกเป็นสามแบบ
+1. Zipbomb
+2. Virus (iLoveU)
+3. [WHITE]
