@@ -1,14 +1,14 @@
 ## Follina Source:
 
-- https://github.com/JohnHammond/msdt-follina
+- [MS-MSDT "Follina" Attack Vector](https://github.com/JohnHammond/msdt-follina)
 
-- https://tryhackme.com/room/follinamsdt
+- [TryHackMe | Follina MSDT](https://tryhackme.com/room/follinamsdt)
 
 ## Office Installation:
 
-- https://github.com/massgravel/Microsoft-Activation-Scripts
+- [Microsoft Activation Scripts](https://github.com/massgravel/Microsoft-Activation-Scripts)
 
-- https://gravesoft.dev/office_c2r_custom
+- [Microsoft Office C2R Custom Install](https://gravesoft.dev/office_c2r_custom)
 
 ## OS Virtual Hard Disk or Developer Enviroment:
 
