@@ -10,6 +10,8 @@
 
 - [Microsoft Office C2R Custom Install](https://gravesoft.dev/office_c2r_custom)
 
+- [Microsoft Office 2016 Professional x64 (64-bit)](https://archive.org/download/office-16.x-64.en-us/Office16.x64.en-US.ISO)
+
 ## OS Virtual Hard Disk or Developer Enviroment:
 
 - [Windows Server 2019 Version 1809 (17763.737)](https://software-download.microsoft.com/download/pr/17763.737.amd64fre.rs5_release_svc_refresh.190906-2324_server_serverdatacentereval_en-us_1.vhd)
