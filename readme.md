@@ -12,13 +12,13 @@
 
 - [Microsoft Office 2016 Professional x64 (64-bit)](https://archive.org/download/office-16.x-64.en-us/Office16.x64.en-US.ISO)
 
-- [Microsoft 2016 Professional Retail x64 (64-bit) /](https://officecdn.microsoft.com/db/492350F6-3A01-4F97-B9C0-C7C6DDF67D60/media/en-US/ProfessionalRetail.img)
+- [Microsoft 2016 Professional Retail x64 (64-bit)](https://officecdn.microsoft.com/db/492350F6-3A01-4F97-B9C0-C7C6DDF67D60/media/en-US/ProfessionalRetail.img) ✔
 
 ## OS Virtual Hard Disk or Developer Enviroment:
 
 - [Windows Server 2019 Version 1809 (17763.737)](https://software-download.microsoft.com/download/pr/17763.737.amd64fre.rs5_release_svc_refresh.190906-2324_server_serverdatacentereval_en-us_1.vhd)
 
-- [Windows Server 2019 Version 1809 (17763.1) /](https://software-download.microsoft.com/download/pr/17763.1.amd64fre.rs5_release.180914-1434_server_serverdatacentereval_en-us.vhd)
+- [Windows Server 2019 Version 1809 (17763.1)](https://software-download.microsoft.com/download/pr/17763.1.amd64fre.rs5_release.180914-1434_server_serverdatacentereval_en-us.vhd) ✔
 
 - [Windows 10 Enterprise Evaluation (19H1)](https://download.microsoft.com/download/b/7/a/b7a6fb6e-cae1-4e19-9249-205803bc4ada/WinDev2004Eval.VMware.zip)
 
