@@ -17,7 +17,7 @@
 
 ## 09/08/2025 - 01/09/2025
 - ปัญหา `Reverse Shell` ของ `JohnHammond` ไม่สามารถใช้งานได้ตามปกติ หรือไม่มีการตอบสนองกลับมา
-    - คาดว่าเป็นปัญหาที่ `nc64.exe` ที่อาจมีการตั้งค่า `LHOST` และ `LPORT` ที่ไม่เหมือนกัน
+    - คาดว่าเป็นปัญหาที่ `nc64.exe` ที่อาจมีการตั้งค่า `LHOST` และ `LPORT` ที่ไม่ตรงกับสภาพแวดล้อมในการจำลอง
     - ทดลองสร้าง `reverse tcp payload` ขึ้นมาเองด้วย `msfvenom`
 
-- แก้ไข follina.py โดยแทนที่ของ `JohnHammond` ด้วย payload จาก `Follina-Simulation\reverse-tcp\payload` แทน
+- แก้ไข `follina.py` โดยแทนที่ของ `JohnHammond` ด้วย payload จาก `Follina-Simulation\reverse-tcp\payload` แทน
