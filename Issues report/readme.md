@@ -20,4 +20,4 @@
     - คาดว่าเป็นปัญหาที่ `nc64.exe` ที่อาจมีการตั้งค่า `LHOST` และ `LPORT` ที่ไม่ตรงกับสภาพแวดล้อมในการจำลอง
     - ทดลองสร้าง `reverse tcp payload` ขึ้นมาเองด้วย `msfvenom`
 
-- แก้ไข `follina.py` โดยแทนที่ของ `JohnHammond` ด้วย payload จาก `Follina-Simulation\reverse-tcp\payload` แทน
+- แก้ไข `follina.py` โดยแทนที่ของ `JohnHammond` ด้วย payload จาก `Follina-Simulation\reverse-tcp\payload` ที่สร้างขึ้นใหม่จาก `msfvenom` แทน
