@@ -1,8 +1,10 @@
-## Follina Source:
+## Follina Materials:
 
 - [MS-MSDT "Follina" Attack Vector](https://github.com/JohnHammond/msdt-follina)
 
 - [TryHackMe | Follina MSDT](https://tryhackme.com/room/follinamsdt)
+
+- [Windows Defender Remover](https://github.com/ionuttbara/windows-defender-remover)
 
 ## Office Installation:
 
