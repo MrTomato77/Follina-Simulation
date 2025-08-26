@@ -15,7 +15,8 @@
 - ปัญหา `Error code 501, message Unsupported method ('OPTIONS')` คำสั่งที่ส่งผ่าน `MSDT Protocol` ยังไม่สามารถทำงานได้
     - คาดว่าต้องหา office version ที่เหมาะสมกับการจำลองให้เจอก่อน
 
-- แก้ไขโดยการ `Microsoft 2016 Professional Retail x64 (64-bit)` ซึ่งสามารถใช้งานได้และเหมาะสมต่อการจำลองสถานการณ์
+- แก้ไขโดยการใช้ `Microsoft 2016 Professional Retail x64 (64-bit)` ซึ่งสามารถใช้งานได้และเหมาะสมต่อการจำลองสถานการณ์
+    - พบว่าสามารถสั่งให้ฝั่ง Victim เรียกใช้ `calc.exe`, `notepad.exe`, `reverse shell` ได้สำเร็จ
 
 ## 09/08/2025 - 26/08/2025
 - ปัญหา `Reverse Shell` ของ `JohnHammond` สามารถสร้าง `session` ได้เพียงครั้งเดียว หลังจากถูกปิด `Troubleshooter`
