@@ -15,9 +15,11 @@
 
 - พบว่า `Microsoft 2016 Professional Retail x64 (64-bit)` สามารถใช้งานได้และเหมาะสมต่อการจำลองสถานการณ์
 
-## 09/08/2025 - 01/09/2025
-- ปัญหา `Reverse Shell` ของ `JohnHammond` ไม่สามารถใช้งานได้ตามปกติ หรือไม่มีการตอบสนองกลับมา
-    - คาดว่าเป็นปัญหาที่ `nc64.exe` ที่อาจมีการตั้งค่า `LHOST` และ `LPORT` ที่ไม่ตรงกับสภาพแวดล้อมในการจำลอง
-    - ทดลองสร้าง `reverse tcp payload` ขึ้นมาเองด้วย `msfvenom`
+## 09/08/2025 - 26/08/2025
+- ปัญหา `Reverse Shell` ของ `JohnHammond` สามารถสร้าง `session` ได้เพียงครั้งเดียว หลังจากถูกปิด `Troubleshooter`
+    - `MSDT Protocol` ใช้งานได้ตามปกติ มีการเรียก `Internet Explorer` ออกมาเหมือนทุกครั้ง
+    - `Troubleshooter` ไม่ถูกเรียกใช้งานในครั้งที่ 2 ทำให้การ `Reverse Shell` ไม่สำเร็จ
 
-- แก้ไข `follina.py` โดยแทนที่ของ `JohnHammond` ด้วย payload จาก `Follina-Simulation\reverse-tcp\payload` ที่สร้างขึ้นใหม่จาก `msfvenom` แทน
+- แก้ไขโดยการใช้ `reverse tcp payload` ในการรักษา `session` หลังจาก `Troubleshooter` ถูกปิด
+    - สร้าง `reverse tcp payload` ขึ้นมาเองด้วย `msfvenom`
+    - ใช้ `set AutoRunScript getsystem` ใน Listener เพื่อขอใช้สิทธิสูงสุดในการเข้าถึง Victim
