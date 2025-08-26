@@ -6,11 +6,13 @@
 
 - [Windows Defender Remover](https://github.com/ionuttbara/windows-defender-remover)
 
-## Office Installation:
+## Office Custom Installation:
 
 - [Microsoft Activation Scripts](https://github.com/massgravel/Microsoft-Activation-Scripts)
 
 - [Microsoft Office C2R Custom Install](https://gravesoft.dev/office_c2r_custom)
+
+## Office Specific Installation:
 
 - [Microsoft Office 2016 Professional x64 (64-bit)](https://archive.org/download/office-16.x-64.en-us/Office16.x64.en-US.ISO)
 
