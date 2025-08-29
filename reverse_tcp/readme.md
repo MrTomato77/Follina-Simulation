@@ -24,7 +24,7 @@ Setup Listener
  set AutoRunScript getsystem
  exploit
  ```
- 
+
  Waits for victim connection.
 
 ## Install payload for Startup and run it immediately
