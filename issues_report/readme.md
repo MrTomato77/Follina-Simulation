@@ -26,3 +26,8 @@
 - แก้ไขโดยการใช้ `reverse tcp payload` ในการรักษา `session` หลังจาก `Troubleshooter` ถูกปิด
     - สร้าง `reverse tcp payload` ขึ้นมาเองด้วย `msfvenom`
     - ใช้ `set AutoRunScript getsystem` ใน Listener เพื่อขอใช้สิทธิสูงสุดในการเข้าถึง Victim
+
+## 27/08/2025 - 29/08/2025
+- ปัญหาการรวม `command line` เข้ากับ `follina.py` ที่ใช้งานการ `reverse shell`
+    - ต้องการบังคับให้ `victim` โหลดและรัน `payload` ทันทีหลังจากเปิดไฟล์ `follina.doc`
+    - เมื่อผลลัพธ์ออกมาผิดพลาดจะทำให้ `MSDT Protocol` ในฝั่ง `victim` ไม่สามารถเรียกใช้ได้อีก
