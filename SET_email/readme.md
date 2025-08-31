@@ -1,16 +1,5 @@
 Use Social Engineering Toolkit (SET) to send follina file to receiver using email.
 
-**Install python3-aiosmtpd to be used as SMTP server**
-```
-sudo apt update
-sudo apt install python3-aiosmtpd -y
-```
-
-**Run SMTP server**
-```
-python3 -m aiosmtpd -n -l 0.0.0.0:25
-```
-
 1. **Run as root to use SET.**
 ```
 sudo setoolkit
@@ -56,41 +45,36 @@ Hello, my name is ... I want to take an internship at ... here is the file regar
 example@gmail.com
 ```
 
-10. **Enter 2 to use own server or open relay.**
+10. **Enter 1 to use own gmail account for attacking.**
 ```
-2
+1
 ```
 
-11. **Enter attacker email and what the reciever will see.**
+11. **Enter attacker email, what the reciever will see and app password for this gmail.**
 ```
 attacker@test.com
 attacker
+password
 ```
 
-12. **Set SMTP server address and enter port number for SMTP server**
-```
-10.0.2.4
-25
-```
-
-13. **Enter y to flag the email as high priority.**
+12. **Enter y to flag the email as high priority.**
 ```
 y
 ```
 
-14. **Enter y to add an attachment.**
+13. **Enter y to add an attachment.**
 ```
 y
 ```
 
-15. **Enter path to the follina file from kali side.**
+14. **Enter path to the follina file from kali side.**
 
-16. **Enter n regarding adding an inline attachment.**
+15. **Enter n regarding adding an inline attachment.**
 ```
 n
 ```
 
-17. **Type "END" to finish**
+16. **Type "END" to finish**
 ```
 END
 ```
