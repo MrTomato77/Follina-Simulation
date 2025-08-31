@@ -1,3 +1,21 @@
+Download MailHog for simulating email service.
+```
+wget https://github.com/mailhog/MailHog/releases/download/v1.0.1/MailHog_linux_amd64
+chmod +x MailHog_linux_amd64
+```
+
+Run MailHog service.
+Default port for SMTP: 1025
+Default port for Web UI: 8025
+```
+mailhog
+```
+
+Open MailHog on Windows Server for downloading follina file.
+```
+10.0.2.4:8025
+```
+
 Use Social Engineering Toolkit (SET) to send follina file to receiver using email.
 
 1. **Run as root to use SET.**
@@ -45,37 +63,40 @@ Hello, my name is ... I want to take an internship at ... here is the file regar
 example@gmail.com
 ```
 
-10. **Enter 1 to use own gmail account for attacking.**
+10. **Enter 2 to use own server or open relay for attacking.**
 ```
-1
+2
 ```
 
 11. **Enter attacker email, what the reciever will see and app password for this gmail.**
 ```
 attacker@test.com
 attacker
-password
 ```
 
-12. **Enter y to flag the email as high priority.**
+12. **Enter SMTP server address and port for SMTP server port.**
+```
+10.0.2.4
+1025
+```
+
+13. **Enter y to flag the email as high priority.**
+```
+yes
+```
+
+14. **Enter y to add an attachment.**
 ```
 y
 ```
 
-13. **Enter y to add an attachment.**
+15. **Enter path to the follina file from kali side.**
 ```
-y
+/home/kali/follina/msdt-follina/follina.doc
 ```
 
-14. **Enter path to the follina file from kali side.**
-
-15. **Enter n regarding adding an inline attachment.**
+16. **Enter n regarding adding an inline attachment.**
 ```
 n
-```
-
-16. **Type "END" to finish**
-```
-END
 ```
 
