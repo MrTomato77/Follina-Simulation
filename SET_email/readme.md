@@ -2,7 +2,7 @@ Use Social Engineering Toolkit (SET) to send follina file to receiver using emai
 
 1. **Run as root to use SET.**
 ```
-sudo su
+sudo setoolkit
 ```
 
 2. **Select Social-Engineering Attacks.**
