@@ -8,7 +8,7 @@ Run MailHog service.
 Default port for SMTP: 1025
 Default port for Web UI: 8025
 ```
-mailhog
+./MailHog_linux_amd64
 ```
 
 Open MailHog on Windows Server for downloading follina file.
