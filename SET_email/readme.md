@@ -1,3 +1,4 @@
+## Attacker side
 Download MailHog for simulating email service.
 ```
 wget https://github.com/mailhog/MailHog/releases/download/v1.0.1/MailHog_linux_amd64
@@ -11,12 +12,15 @@ Default port for Web UI: 8025
 ./MailHog_linux_amd64
 ```
 
+## Victim side
 Open MailHog on Windows Server for downloading follina file.
 ```
 10.0.2.4:8025
 ```
 
-Use Social Engineering Toolkit (SET) to send follina file to receiver using email.
+Open the mail that was sent and click "Source" tab. Then at "Content-Type: application" click download.
+
+## Use Social Engineering Toolkit (SET) to send follina file to victim using email.
 
 1. **Run as root to use SET.**
 ```
@@ -58,9 +62,9 @@ h
 Hello, my name is ... I want to take an internship at ... here is the file regarding internship.
 ```
 
-9. **Enter receiver email.**
+9. **Enter victim email.**
 ```
-example@gmail.com
+test@example.com
 ```
 
 10. **Enter 2 to use own server or open relay for attacking.**
@@ -68,10 +72,10 @@ example@gmail.com
 2
 ```
 
-11. **Enter attacker email, what the reciever will see and app password for this gmail.**
+11. **Enter attacker email, what the victim will see and app password for this gmail.**
 ```
-attacker@test.com
-attacker
+test2@example.com
+test2
 ```
 
 12. **Enter SMTP server address and port for SMTP server port.**
