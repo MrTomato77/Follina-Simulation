@@ -31,3 +31,10 @@
 - ปัญหาการรวม `command line` เข้ากับ `follina.py` ที่ใช้งานการ `reverse shell`
     - ต้องการบังคับให้ `victim` โหลดและรัน `payload` ทันทีหลังจากเปิดไฟล์ `follina.doc`
     - เมื่อผลลัพธ์ออกมาผิดพลาดจะทำให้ `MSDT Protocol` ในฝั่ง `victim` ไม่สามารถเรียกใช้ได้อีก
+ 
+## 31/08/2025 - 31/08/2025
+- ปัญหาการส่ง mail โดยใช้ SET ไม่ติด
+    - ส่ง mail โดยใช้ SET ไปยัง gmail ไม่ได้
+
+- แก้ไขโดยการใช้ MailHog แทนการส่ง mail จริง
+    - โหลด MailHog จาก `https://github.com/mailhog/MailHog/releases/download/v1.0.1/MailHog_linux_amd64`
