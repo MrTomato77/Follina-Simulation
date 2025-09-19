@@ -37,4 +37,5 @@
     - ฝั่งผู้รับที่ใช้ Google Mail จะไม่ได้รับเมลใดๆ ที่ส่งมาจาก SET
 
 - แก้ไขโดยใช้ MailHog แทน Google Mail ในฝั่งผู้รับ
-    - ไฟล์ที่แนบไปด้วยอยู่ที่ `https://github.com/mailhog/MailHog/releases/download/v1.0.1/MailHog_linux_amd64`
+    - สามารถใช้ MailHog ในการส่งไฟล์ได้
+    - ไฟล์ที่แนบไปด้วยอยู่ที่ "Source" tab จากนั้นไปที่ "Content-Type: application" เพื่อโหลดไฟล์
