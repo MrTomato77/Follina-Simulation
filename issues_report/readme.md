@@ -33,8 +33,8 @@
     - เมื่อผลลัพธ์ออกมาผิดพลาดจะทำให้ `MSDT Protocol` ในฝั่ง `victim` ไม่สามารถเรียกใช้ได้อีก
  
 ## 31/08/2025 - 31/08/2025
-- ปัญหาการส่ง mail โดยใช้ SET ไม่ติด
-    - ส่ง mail โดยใช้ SET ไปยัง gmail ไม่ได้
+- ปัญหา SET ไม่สามารถส่งเมลไปยัง Google Mail
+    - ฝั่งผู้รับที่ใช้ Google Mail จะไม่ได้รับเมลใดๆ ที่ส่งมาจาก SET
 
-- แก้ไขโดยการใช้ MailHog แทนการส่ง mail จริง
-    - โหลด MailHog จาก `https://github.com/mailhog/MailHog/releases/download/v1.0.1/MailHog_linux_amd64`
+- แก้ไขโดยใช้ MailHog แทน Google Mail ในฝั่งผู้รับ
+    - ไฟล์ที่แนบไปด้วยอยู่ที่ `https://github.com/mailhog/MailHog/releases/download/v1.0.1/MailHog_linux_amd64`
