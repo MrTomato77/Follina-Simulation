@@ -26,11 +26,6 @@
 - แก้ไขโดยการใช้ `reverse tcp payload` ในการรักษา `session` หลังจาก `Troubleshooter` ถูกปิด
     - สร้าง `reverse tcp payload` ขึ้นมาเองด้วย `msfvenom`
     - ใช้ `set AutoRunScript getsystem` ใน Listener เพื่อขอใช้สิทธิสูงสุดในการเข้าถึง Victim
-
-## 27/08/2025 - 29/08/2025
-- ปัญหาการรวม `command line` เข้ากับ `follina.py` ที่ใช้งานการ `reverse shell`
-    - ต้องการบังคับให้ `victim` โหลดและรัน `payload` ทันทีหลังจากเปิดไฟล์ `follina.doc`
-    - เมื่อผลลัพธ์ออกมาผิดพลาดจะทำให้ `MSDT Protocol` ในฝั่ง `victim` ไม่สามารถเรียกใช้ได้อีก
  
 ## 26/08/2025 - 31/08/2025
 - ปัญหา SET ไม่สามารถส่งเมลไปยัง Google Mail
@@ -39,3 +34,12 @@
 - แก้ไขโดยใช้ MailHog แทน Google Mail ในฝั่งผู้รับ
     - สามารถใช้ MailHog ในการรับไฟล์ได้
     - ไฟล์ที่แนบไปด้วยอยู่ที่ `Source tab` จากนั้นไปที่ `Content-Type: application` เพื่อโหลดไฟล์ที่แนบมาโดย SET
+
+## 27/08/2025 - 19/09/2025
+- ปัญหาการรวม `command line` เข้ากับ `follina.py` ที่ใช้งานการ `reverse shell`
+    - ต้องการบังคับให้ `victim` โหลดและรัน `payload` ทันทีหลังจากเปิดไฟล์ `follina.doc`
+    - เมื่อผลลัพธ์ออกมาผิดพลาดจะทำให้ `MSDT Protocol` ในฝั่ง `victim` ไม่สามารถเรียกใช้ได้อีก
+- แก้ไขโดยการใช้ `task scheduler` ในการสั่งรัน `payload` ตามเวลาที่ตั้งไว้
+    - สั่งรัน `payload` ทุกครั้งเมื่อ `victim` เปิดเครื่อง
+    - สั่งรัน `payload` ทุกครั้งเมื่อถึงเวลา 10:00 AM.
+    - การใช้ `HKCU` จะทำให้ AV ตรวจจับได้ง่ายจึงเปลี่ยนมาใช้ `task scheduler` แทน
