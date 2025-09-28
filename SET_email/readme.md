@@ -74,13 +74,13 @@ test@example.com
 
 11. **Enter attacker email, what the victim will see and app password for this gmail.**
 ```
-test2@example.com
-test2
+student@example.com
+student
 ```
 
 12. **Enter SMTP server address and port for SMTP server port.**
 ```
-10.0.2.4
+10.0.2.9
 1025
 ```
 
