@@ -96,7 +96,7 @@ y
 
 15. **Enter path to the follina file from kali side.**
 ```
-/home/kali/follina/msdt-follina/follina.doc
+/home/kali/follina/msdt-follina/resume.docx
 ```
 
 16. **Enter n regarding adding an inline attachment.**
