@@ -59,7 +59,7 @@ h
 
 8. **Enter body of email.**
 ```
-Hello, my name is ... I want to take an internship at ... here is the file regarding internship.
+อันนี้โพยวิชา Life in the future อย่าลอกให้เหมือนมากนะ
 ```
 
 9. **Enter victim email.**
