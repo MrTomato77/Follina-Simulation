@@ -49,7 +49,7 @@ sudo setoolkit
 
 6. **Enter subject of email**
 ```
-Internship
+Life In The Future - Assignment 10
 ```
 
 7. **Set messsage to be sent as html**
@@ -64,7 +64,7 @@ Hello, my name is ... I want to take an internship at ... here is the file regar
 
 9. **Enter victim email.**
 ```
-test@example.com
+shana@example.com
 ```
 
 10. **Enter 2 to use own server or open relay for attacking.**
@@ -74,8 +74,8 @@ test@example.com
 
 11. **Enter attacker email, what the victim will see and app password for this gmail.**
 ```
-student@example.com
-student
+nakrit@example.com
+nakrit
 ```
 
 12. **Enter SMTP server address and port for SMTP server port.**
@@ -96,7 +96,7 @@ y
 
 15. **Enter path to the follina file from kali side.**
 ```
-/home/kali/msdt-follina/resume.docx
+/home/kali/msdt-follina/LF-6510110212-A10.docx
 ```
 
 16. **Enter n regarding adding an inline attachment.**
