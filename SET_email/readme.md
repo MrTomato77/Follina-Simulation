@@ -49,7 +49,7 @@ sudo setoolkit
 
 6. **Enter subject of email**
 ```
-Life In The Future - Assignment 10
+Cybersecurity Officer - Final Report
 ```
 
 7. **Set messsage to be sent as html**
@@ -59,7 +59,7 @@ h
 
 8. **Enter body of email.**
 ```
-อันนี้โพยวิชา Life in the future อย่าลอกให้เหมือนมากนะ
+ช่วยหาจุดที่ต้องแก้ไข และเขียนรายละเอียดมาให้ด้วยนะ ไฟล์รายงานแนบมากับเมล์นี้แล้ว
 ```
 
 9. **Enter victim email.**
@@ -96,7 +96,7 @@ y
 
 15. **Enter path to the follina file from kali side.**
 ```
-/home/kali/msdt-follina/LF-6510110212-A10.docx
+/home/kali/msdt-follina/report.docx
 ```
 
 16. **Enter n regarding adding an inline attachment.**
